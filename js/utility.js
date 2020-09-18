@@ -3,6 +3,9 @@
 
 $(document).ready(function () {
 
+    setTimeout(() => {
+        $(".advert").slideDown();
+    }, 1000)
     $("#hide").click(function () {
       $("p").toggle();
     });
@@ -18,6 +21,18 @@ $(document).ready(function () {
         var aid = $(this).attr("href");
         $('html,body').animate({scrollTop: $(aid).offset().top},'fast');
     });
+    $(".historyBtn").click(function() {
+        $(".workhistory").slideToggle("fast");
+    });
+    $(".techBtn").click(function() {
+        $(".moretech").slideToggle("fast");
+    });
+    // $(document).scroll(function() {
+    //     var top = $(window).scrollTop();
+    //     setTimeout(() => {
+    //         $(".toTop").css("display", "block");
+    //     }, 1000);
+    // })
 
   });
 
@@ -27,27 +42,3 @@ $(document).ready(function () {
 function router(loc) {
     window.location.href = 'file:///C:/Users/rcelo/Desktop/projects/general-dev/vanilla/html/' + loc + '.html';
 };
-
-(function dayDate() {
-    // var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    // var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    // var d = new Date();
-    // var day = days[d.getDay()];
-    // var hr = d.getHours();
-    // var min = d.getMinutes();
-    // if (min < 10) {
-    //     min = "0" + min;
-    // }
-    // var ampm = "am";
-    // if (hr > 12) {
-    //     hr -= 12;
-    //     ampm = "pm";
-    // }
-    // var date = d.getDate();
-    // var month = months[d.getMonth()];
-    // var year = d.getFullYear();
-    // var clock = document.getElementById("clock");
-    // clock.innerHTML = day + " " + hr + ":" + min + ampm + " " + month + " " + date + ", " + year;
-    let clock = document.getElementById("clock");
-    clock.innerHTML = 'hello?'
-})();

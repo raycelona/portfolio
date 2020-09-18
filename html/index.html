@@ -5,70 +5,148 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
+  <title>Ray Celona - Portfoilio and Resume</title>
+  <meta name="description" content="Ray Celona">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous"
-  >
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  <script src="https://use.fontawesome.com/6a39afb034.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../js/utility.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1 id="top">Hello!!</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#about" class="sliding-link">About</a></li>
-      <li><a href="#history" class="sliding-link">History</a></li>
-      <li><a href="#tech" class="sliding-link">Tech</a></li>
-      <li><a href="#resume" class="sliding-link">Resume</a></li>
-      <li><a href="#contact" class="sliding-link">Contact</a></li>
-    </ul>
-    <div id="clock"></div>
-  </nav>
-  <div class="main">
-    <div class="widget" id="about">
-      <h2>About</h2>
-      <div>Stuff...</div>
+  <div class="banner" id="top">
+    <header class="row">
+      <div class="col-md-6">
+        <h1>Ray Celona</h1>
+      </div>
+    <div class="col-md-6">
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#top" class="sliding-link">Home</a></li>
+          <li><a href="#about" class="sliding-link">About</a></li>
+          <li><a href="#history" class="sliding-link">History</a></li>
+          <li><a href="#tech" class="sliding-link">Tech</a></li>
+          <li><a href="#resume" class="sliding-link">Resume</a></li>
+          <li><a href="#contact" class="sliding-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <div class="title">
+      <h2>{ Growth Mindset }</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" id="about">
+      <h3>About</h3>
+      <div class="col-md-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nulla quis tincidunt hendrerit. Nunc auctor sed dui at venenatis. Integer scelerisque risus vitae nibh porta semper. Aliquam auctor enim a semper faucibus. Integer ut consequat eros. Nunc laoreet libero in ligula tincidunt, a iaculis tortor porta. Proin dignissim nulla velit, ut mattis mauris pretium in.
+      </div>
+      <div class="col-md-6">
+        <img src="../img/responsive.jpg" />
+      </div>
     </div>
 
-    <section class="widget" id="history">
-      <h2>History</h2>
-      <div>Stuff...</div>
+    <section class="row" id="history">
+      <h3>History</h3>
+      <div class="col-md-6">
+        Here's some work history<br>
+        <button class="historyBtn">See more</button>
+      </div>
+      <div class="col-md-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nulla quis tincidunt hendrerit. Nunc auctor sed dui at venenatis. Integer scelerisque risus vitae nibh porta semper. Aliquam auctor enim a semper faucibus. Integer ut consequat eros. Nunc laoreet libero in ligula tincidunt, a iaculis tortor porta. Proin dignissim nulla velit, ut mattis mauris pretium in.
+      </div>
     </section>
+  </div>
 
-    <section class="widget" id="tech">
-      <h2>Tech</h2>
-      <div>Stuff...</div>
-    </section>
-
-    <section class="widget" id="resume">
-      <h2>Resume</h2>
-      <div>Stuff...</div>
-    </section>
-
-    <section class="widget" id="contactn">
-      <h2>Contact</h2>
-      <div>
-        <form>
-          <input type="text">
-        </form>
-        <div>Media links</div>
+    <section>
+      <div class="row moreSection workhistory">
+        <h4>More work history</h4>
+        <div class="col-sm-2">1</div>
+        <div class="col-sm-2">2</div>
+        <div class="col-sm-2">3</div>
+        <div class="col-sm-2">4</div>
+        <div class="col-sm-2">5</div>
+        <div class="col-sm-2">6</div>
       </div>
     </section>
 
+  <div class="container">
+      <section class="row" id="tech">
+      <h3>Tech</h3>
+      <div class="col-md-6">
+        Always keeping up on the latest trends, tricks and techniques...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nulla quis tincidunt hendrerit. Nunc auctor sed dui at venenatis. Integer scelerisque risus vitae nibh porta semper. Aliquam auctor enim a semper faucibus. Integer ut consequat eros. Nunc laoreet libero in ligula tincidunt, a iaculis tortor porta. Proin dignissim nulla velit, ut mattis mauris pretium in.
+      </div>
+      <div class="col-md-6 tech-icons">
+        <img src="../img/angular-brands.svg" />
+        <img src="../img/html5-brands.svg" class="tech-icons-smaller" /> 
+        <img src="../img/css3-alt-brands.svg" class="tech-icons-smaller" /> 
+        <img src="../img/js-brands.svg" /> 
+        <br><button class="techBtn">See more</button>
+      </div>
+    </section>
   </div>
+
+  <section>
+    <div class="row moreSection moretech">
+      <h4>More tech stuffs</h4>
+      <div class="col-sm-2">1</div>
+      <div class="col-sm-2">2</div>
+      <div class="col-sm-2">3</div>
+      <div class="col-sm-2">4</div>
+      <div class="col-sm-2">5</div>
+      <div class="col-sm-2">6</div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="row" id="resume">
+      <h3>Resume</h3>
+      <div class="col-md-6">Download the
+        <a href="../files/Ray_Celona_Resume.docx" download="resume">Word version</a>
+        or a 
+        <a href="../files/Ray_Celona_Resume.pdf" target="blank" download="resume">PDF</a>
+      </div>
+      <div class="col-md-6">
+        Other stuff...
+      </div>
+    </section>
+
+    <section class="row" id="contact">
+      <h3>Contact</h3>
+      <div class="col-md-6">
+        <form>
+          <div class="form-item">
+            <input type="text" placeholder="Name">
+            <i class="fa fa-user form-icon"></i>
+          </div>
+          <div class="form-item">
+            <input type="text" placeholder="Email">
+            <i class="fa fa-envelope-open form-icon"></i>
+          </div>
+          <div class="form-item">
+            <textarea rows="8" placeholder="Message"></textarea>
+            <i class="fa fa-pencil form-icon"></i>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">Media links</div>
+    </section>
+
+  </div>
+
   <div>
-    <a href="#top" class="toTop" >^Top</a>
+    <a href="#top" class="toTop">^Top</a>
   </div>
-  <footer>Footer</footer>
+
+  <footer class="footer">&#169 Ray Celona, 2020</footer>
 </body>
 
 </html>
