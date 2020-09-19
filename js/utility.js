@@ -22,7 +22,8 @@ $(document).ready(function () {
         $('html,body').animate({scrollTop: $(aid).offset().top},'fast');
     });
     $(".historyBtn").click(function() {
-        $(".workhistory").slideToggle("fast");
+        // $(".workhistory").slideToggle("fast");
+        $("#history").css("height", "600px");
     });
     $(".techBtn").click(function() {
         $(".moretech").slideToggle("fast");
