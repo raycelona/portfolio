@@ -55,11 +55,11 @@ body, html {
   .row {
       margin: 0;
   }
-  ul li a{
+  nav ul li a{
       color:#FFF;
       font-size: 18px;
   }
-  ul li a:hover {
+  nav ul li a:hover {
       color: #000;;
   }
   .toTop {
@@ -116,6 +116,9 @@ body, html {
       bottom: 0px;
       left: 0px;
       opacity: 0.25;
+  }
+  #history img {
+      width: 100px;
   }
   .moretech {
       background-color: #decbb6;
