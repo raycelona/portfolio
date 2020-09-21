@@ -34,10 +34,6 @@ $(document).ready(function () {
 
 /**** JS Utilities ****/
 
-function router(loc) {
-    window.location.href = 'file:///C:/Users/rcelo/Desktop/projects/general-dev/vanilla/html/' + loc + '.html';
-};
-
 function changeDesc(company) {
     let workItem = document.getElementsByClassName("workItem");
     for (let i = 0; i < workItem.length; i++) {
