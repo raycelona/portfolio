@@ -21,7 +21,7 @@
 
 <body>
   <div class="banner" id="top">
-    <header class="row">
+    <header class="row" id="header">
       <div class="col-md-6">
         <h1>Ray Celona</h1>
       </div>
@@ -54,7 +54,8 @@
         <div>
           <ul>
             <li>UI development</li>
-            <li>UX Design</li>
+            <li>UX design</li>
+            <li>Responsive design</li>
             <li>Agile/Scrum</li>
             <li>SEO</li>
             <li>Accessibility</li>
@@ -72,19 +73,52 @@
     <h3>Work</h3>
     <div class="col-md-6">
       <div>
-        <img src="../img/cvs.png" />
+        <a onclick="changeDesc('cvs')"><img src="../img/cvs.png" /></a>
         <!-- <p>CVS Health</p> -->
-        <img src="../img/optum.png" />
+        <a onclick="changeDesc('optum')"><img src="../img/optum.png" /></a>
         <!-- <p>Optum</p> -->
-        <img src="../img/fidelity.png" />
+        <a onclick="changeDesc('fidelity')"><img src="../img/fidelity.png" /></a>
         <!-- <p>Fidelity Investments</p> -->
       </div>
     </div>
-    <div class="col-md-6">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nulla quis tincidunt hendrerit. Nunc auctor
-      sed dui at venenatis. Integer scelerisque risus vitae nibh porta semper. Aliquam auctor enim a semper faucibus.
-      Integer ut consequat eros. Nunc laoreet libero in ligula tincidunt, a iaculis tortor porta. Proin dignissim nulla
-      velit, ut mattis mauris pretium in.
+    <div class="col-md-6" style="min-height: 300px;">
+      <div id="cvs" class="hiding workItem">
+        <strong>CVS Health</strong>
+        <p>
+          I'm currently employed by CVS Health, headquartered in Woonsocket RI.  I'm on a team of developers
+          working to build, upgrade and maintain the ExtraCare portion of cvs.com.  
+        </p>
+        <p>
+          Working in an Agile/Scum environment, I utilize the latest versions of Angular (6-10), HTML5, CSS3
+          with SASS and JavaScript ES6.  Using Gitlabs as source control and CI/CD pipelines through Jenkins
+          I work to deploy new features and security upgrades on a weekly basis.
+        </p>
+      </div>
+      <div id="optum" class="hiding workItem">
+        <strong>Optum</strong>
+        <p>
+          Optum is the technology hub for United Health Group and is headquartered in the Fenway area of Boston, MA.
+          My time there was spent specializing on HTML and CSS layouts and utilizing JavaScript and AngularJS 
+          to create new customer facing healthcare and healthcare facilities software.
+        </p>
+      </div>
+      <div id="fidelity" class="hiding workItem">
+        <strong>Fidelity Investments</strong>
+        <p>
+          Fidelity Investments in Smithfeild RI had a need to create a brand new, responsive mobile site for their 
+          advisor site and I was the first UI developer to be brought on for this effort.
+        </p>
+        <p>
+          Utilizing HTML5, CSS3 and JavaScript I constructed the responsive advisor site after much collaboration
+          with business stakeholders, project managers and UX designers.
+        </p>
+      </div>
+      <div id="general" class="workItem">
+        <p>For over a decade I've worked along side a multitude of companies from small "mom and pop" shops, to 
+          large enterprise level corporations.  Click the icons to the left to learn more.
+        </p>
+        <p></p>
+      </div>
     </div>
     <div>
       <h4>More work history</h4>
@@ -119,12 +153,12 @@
       </div>
       <div>
         <h4>More tech stuffs</h4>
-        <div class="col-sm-2">1</div>
-        <div class="col-sm-2">2</div>
-        <div class="col-sm-2">3</div>
-        <div class="col-sm-2">4</div>
-        <div class="col-sm-2">5</div>
-        <div class="col-sm-2">6</div>
+        <div class="col-sm-2">jQuery</div>
+        <div class="col-sm-2">LESS/SASS</div>
+        <div class="col-sm-2">Bootstrap</div>
+        <div class="col-sm-2">MEAN Stack</div>
+        <div class="col-sm-2">Git</div>
+        <div class="col-sm-2">Jenkins</div>
       </div>
     </section>
   </div>
@@ -161,16 +195,12 @@
         </form>
       </div>
       <div class="col-md-6">
-        <a href="https://github.com/raycelona"><i class="fa fa-github"></i></a>
+        <a href="https://github.com/raycelona" target="blank"><i class="fa fa-github"></i></a>
         <i class="fa fa-linkedin"></i>
         <i class="fa fa-facebook-square"></i>
       </div>
     </section>
 
-  </div>
-
-  <div>
-    <a href="#top" class="toTop">^Top</a>
   </div>
 
   <footer class="footer">&#169 Ray Celona, 2020</footer>

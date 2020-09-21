@@ -7,25 +7,25 @@ $(document).ready(function () {
         $(".advert").slideDown();
     }, 1000)
     $("#hide").click(function () {
-      $("p").toggle();
+        $("p").toggle();
     });
 
-    $(".sliding-link").click(function(e) {
+    $(".sliding-link").click(function (e) {
         e.preventDefault();
         var aid = $(this).attr("href");
-        $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+        $('html,body').animate({ scrollTop: $(aid).offset().top }, 'slow');
     });
 
-    $(".toTop").click(function(e) {
+    $(".toTop").click(function (e) {
         e.preventDefault();
         var aid = $(this).attr("href");
-        $('html,body').animate({scrollTop: $(aid).offset().top},'fast');
+        $('html,body').animate({ scrollTop: $(aid).offset().top }, 'fast');
     });
-    $(".historyBtn").click(function() {
+    $(".historyBtn").click(function () {
         // $(".workhistory").slideToggle("fast");
         $("#history").css("height", "600px");
     });
-    $(".techBtn").click(function() {
+    $(".techBtn").click(function () {
         $(".moretech").slideToggle("fast");
     });
     // $(document).scroll(function() {
@@ -35,7 +35,7 @@ $(document).ready(function () {
     //     }, 1000);
     // })
 
-  });
+});
 
 
 /**** JS Utilities ****/
@@ -43,3 +43,24 @@ $(document).ready(function () {
 function router(loc) {
     window.location.href = 'file:///C:/Users/rcelo/Desktop/projects/general-dev/vanilla/html/' + loc + '.html';
 };
+
+function changeDesc(company) {
+    let workItem = document.getElementsByClassName("workItem");
+    for (let i = 0; i < workItem.length; i++) {
+        workItem[i].style.display = "none";
+    }
+    document.getElementById(company).style.display = "block";
+};
+
+(function stickyNav() {
+    window.addEventListener('scroll', () => {
+        let aboutPos = document.getElementById("about");
+        let stickyStart = aboutPos.offsetTop;
+        if(window.pageYOffset >= stickyStart - 1) {
+            let header = document.getElementById("header");
+            header.classList.add("stickyNav")
+        } else {
+            header.classList.remove("stickyNav")
+        }
+    })
+})();
