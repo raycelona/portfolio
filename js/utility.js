@@ -28,12 +28,6 @@ $(document).ready(function () {
     $(".techBtn").click(function () {
         $(".moretech").slideToggle("fast");
     });
-    // $(document).scroll(function() {
-    //     var top = $(window).scrollTop();
-    //     setTimeout(() => {
-    //         $(".toTop").css("display", "block");
-    //     }, 1000);
-    // })
 
 });
 
