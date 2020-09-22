@@ -70,9 +70,6 @@ body, html {
       background-color: rgba(0,0,0,0.25);
       color: #FFF;
   }
-  .resOpt {
-      display: none;
-  }
   footer {
       background-color: #F3F3F3;
       color: #333;
@@ -85,14 +82,6 @@ body, html {
       margin: 20px 0;
       padding: 5px;
       width: 100%;
-  }
-  .moreSection {
-      background-color: #cfdeb6;
-      display: none;
-      padding: 30px;
-      /* -moz-box-shadow: inset 10px 10px 10px #666;
-      -webkit-box-shadow: inset 10px 10px 10px #666;
-      box-shadow: inset 10px 10px 10px #666; */
   }
   #history {
       background-color: #000;
@@ -113,6 +102,12 @@ body, html {
   }
   #history img {
       width: 100px;
+  }
+  #history li {
+      cursor: pointer;
+  }
+  .active {
+      border: 1px solid red;
   }
   .moretech {
       background-color: #decbb6;
@@ -150,14 +145,6 @@ body, html {
   .workItem {
       display: none;
    }
-   .active {
-       border: 1px solid red;
-   }
-  /*.stickyNav {
-      background-color: #333;
-      position: fixed;
-    z-index: 1000;
-  } */
   .stickyNav {
     background-color: #333;
     position: fixed;
@@ -168,27 +155,3 @@ body, html {
     -o-animation: fadeIn ease .2s;
     -ms-animation: fadeIn ease .2s;
     }
-    /* @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    } */
