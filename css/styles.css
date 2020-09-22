@@ -147,7 +147,7 @@ body, html {
   .row {
     padding: 80px 0;
   }
-  .hiding {
+  .workItem {
       display: none;
    }
    .active {

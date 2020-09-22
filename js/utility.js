@@ -19,6 +19,7 @@ $(document).ready(function () {
         }
     });
 
+    //Work history functionality
     $(".workItem:first").show();
     $("#history li:first").addClass("active");
     $("#history li").click(function () {
